@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+<head>
+
+	<title>Proiect TW.ChatPrivat</title>
+
+	<link type="text/css" rel="stylesheet" href="../css/stylesheet.css" />
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap.icon-large.min.css" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans Condensed:300italic,300,700" rel="stylesheet" type="text/css">
+
+
+</head>
+
+
+<body>
+
+	<section class="section">
+
+		
+
+		<div class="connected">
+
+			<img src="../img/unnamed.jpg" id="creatorImage" />
+
+			<div class="infoConnected">
+				<h2>Cine esti?</h2>
+				<br/>
+
+				<form class="loginForm">
+					<input type="text" id="yourName" placeholder="Nume" /><br/>
+					<input type="text" id="yourEmail" placeholder="Adresa email" /><br/>
+					<input type="submit" id="yourEnter" value="ENTER" />
+				</form>
+
+			</div>
+
+		</div>
+
+		<div class="personinside">
+
+			<img src="../img/unnamed.jpg" id="ownerImage" />
+
+			<div class="infoInside">
+				<h2>Camera de chat cu: <span class="nickname-chat"></span></h2>
+				<br/>
+
+				<form class="loginForm">
+					<input type="text" id="hisName" placeholder="Nume" /><br/>
+					<input type="text" id="hisEmail" placeholder="Adresa email" /><br/>
+					<input type="submit" id="hisEnter" value="CHAT" />
+				</form>
+
+			</div>
+
+		</div>
+
+		<div class="invite-textfield">
+
+			<h2>Oops, nu mai e nimeni in camera aceasta de chat!</h2>
+			<h5>Invita un prieten cu urmatorul link:</h5>
+
+			<div class="link">
+				<a title="Invite a friend" href="" id="link"></a>
+			</div>
+
+		</div>
+
+		<div class="left">
+
+			<img src="../img/unnamed.jpg" id="leftImage" />
+
+			<div class="info">
+				<h2><span class="nickname-left"></span> a iesit din camera de chat</h2>
+				<h5>Invita pe altcineva cu acelasi link</h5>
+			</div>
+
+		</div>
+
+		<div class="toomanypeople">
+
+			<h2>Oops, nu poti intra in aceasta camera!</h2>
+			<h5>Deja sunt 2 oameni in aceasta camera de chat. Vrei sa creezi o <a title="New Room" href="/create" id="room">Camera noua</a>?</h5>
+
+		</div>
+
+		<div class="nomessages">
+
+			<img src="../img/unnamed.jpg" id="noMessagesImage" />
+
+			<div class="info">
+				<h2>Comunici cu:  <span class="nickname-chat"></span>.</h2>
+				<h5>Trimite un mesaj!</h5>
+			</div>
+
+		</div>
+
+		<div class="chatscreen">
+
+			<ul class="chats">
+			</ul>
+
+		</div>
+
+	</section>
+
+	<footer>
+
+		<form id="chatform">
+
+			<textarea id="message" placeholder="Scrie ceva..."></textarea>
+			<input type="submit" id="submit" value="Trimite"/>
+
+		</form>
+
+	</footer>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="../js/moment.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="../js/chat.js"></script>
+
+</body>
+
+</html>
